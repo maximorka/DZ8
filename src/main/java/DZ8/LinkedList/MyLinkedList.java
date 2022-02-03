@@ -1,28 +1,28 @@
 package DZ8.LinkedList;
 
 public class MyLinkedList<T> {
-    private Noda<T> first;
+    private Noda<T> terminalElement;
 
     public boolean add(T value) {// добавляет элемент в конец
 
-        if (first == null) {
-            first = new Noda<>();
-            first.setValue(value);
+        if (terminalElement == null) {
+            terminalElement = new Noda<>();
+            terminalElement.setValue(value);
             Noda<T> tmp = new Noda<T>();
-            tmp.setBefore(first);
-            first.setNext(tmp);
+            tmp.setBefore(terminalElement);
+            terminalElement.setNext(tmp);
         } else {
-            Noda n = first.getNext();
+            Noda n = terminalElement.getNext();
             n.setNext(new Noda());
-            n.setBefore(first);
+            n.setBefore(terminalElement);
             n.setValue(value);
-            first = n;
+            terminalElement = n;
         }
         return true;
     }
 
     public boolean remove(int index) {//удаляет элемент под индексом
-        Noda<T> geting = first;
+        Noda<T> geting = terminalElement;
         while (geting.getBefore() != null) {
             geting = geting.getBefore();
         }
@@ -40,13 +40,13 @@ public class MyLinkedList<T> {
     }
 
     public boolean clear() { //очищает коллекцию
-        first = null;
+        terminalElement = null;
         return true;
     }
 
     public int size() {//возвращает размер коллекции
         int count = 0;
-        Noda<T> geting = first;
+        Noda<T> geting = terminalElement;
         if (geting != null)
             count++;
         try {
@@ -62,7 +62,7 @@ public class MyLinkedList<T> {
     }
 
     public T get(int index) { //возвращает элемент под индексом
-        Noda<T> geting = first;
+        Noda<T> geting = terminalElement;
         T result;
         try {
         while (geting.getBefore() != null) {

@@ -31,7 +31,7 @@ public class MyArrayList<K> {
         if(index>size)
             throw  new IndexOutOfBoundsException("Index: "+index+", Size: "+size);
 
-        //array[index] = null;
+        array[index] = null;
         size--;
         for (int i = index; i <size; i++) {
             array[i] = array[i+1];
