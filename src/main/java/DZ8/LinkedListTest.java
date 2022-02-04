@@ -12,42 +12,42 @@ import java.util.Queue;
 
 public class LinkedListTest {
     public static void main(String[] args) {
-//        System.out.println();
-//        System.out.println("List load....");
-//
-//        MyArrayList<String> list = new MyArrayList<>();
-//        String l;
-//        int i;
-//        list.add("1");
-//        list.add("2");
-//        list.add("3");
-//        list.add("4");
-//        list.add("5");
-//        list.add("6");
-//        list.add("7");
-//        list.add("8");
-//        list.add("9");
-//        list.add("10");
-//        list.add("11");
-//        list.add("12");
-//        list.add("13");
-//        list.add("14");
-//
-//        int size = list.size();
-//        System.out.println("list.size() = " + size);
-//        for (int j = 0; j < size; j++) {
-//            System.out.println("list.get(j) = " + list.get(j));
-//        }
-//
-//        list.remove(3);
-//        list.remove(3);
-//        size = list.size();
-//        System.out.println("list.size() = " + size);
-//        for (int j = 0; j < size; j++) {
-//            System.out.println("list.get(j) = " + list.get(j));
-//        }
-//        list.clear();
-//        list.get(67);
+        System.out.println();
+        System.out.println("List load....");
+
+        MyArrayList<String> list = new MyArrayList<>();
+        String l;
+        int i;
+        list.add("1");
+        list.add("2");
+        list.add("3");
+        list.add("4");
+        list.add("5");
+        list.add("6");
+        list.add("7");
+        list.add("8");
+        list.add("9");
+        list.add("10");
+        list.add("11");
+        list.add("12");
+        list.add("13");
+        list.add("14");
+
+        int size = list.size();
+        System.out.println("list.size() = " + size);
+        for (int j = 0; j < size; j++) {
+            System.out.println("list.get(j) = " + list.get(j));
+        }
+
+        list.remove(3);
+        list.remove(3);
+        size = list.size();
+        System.out.println("list.size() = " + size);
+        for (int j = 0; j < size; j++) {
+            System.out.println("list.get(j) = " + list.get(j));
+        }
+        list.clear();
+        list.get(67);
 
 
 //        System.out.println();

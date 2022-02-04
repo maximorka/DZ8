@@ -32,11 +32,11 @@ public class MyArrayList<K> {
             throw  new IndexOutOfBoundsException("Index: "+index+", Size: "+size);
 
         array[index] = null;
-        size--;
+
         for (int i = index; i <size; i++) {
             array[i] = array[i+1];
         }
-
+        size--;
         return true;
     }
 
